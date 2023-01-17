@@ -34,3 +34,4 @@ now  run  the project  and you must  see swagger of those microservice
 
 ***i write few test fot  AccountingVoucher using xunit,Moq,AutoFixture and  ...
 *** i use of vs 2022 
+*** refresh browser to see swagger
