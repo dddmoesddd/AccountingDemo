@@ -1,4 +1,4 @@
-# Accounting-master
+# AccountingDemo
 
 this  is a simple project for demo.in this project we have two microservice...voucher and  journal.... we creat delete and update a voucher then we will send this operation to jouranl using  rabbitmq.i use of ddd approuch and  cqrs   along  with  entityframeworkcore-codefirst and sql server.
 to run project Follow the recipe below:
