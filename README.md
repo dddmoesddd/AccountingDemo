@@ -18,7 +18,7 @@ do this   work  for AccountingJournal Microservice for creating your database:
 4-Run this command at the command line:Add-Migration initialdatabase -context -journalcontext
 
 
-go to  solution and rigth click  at it   go to maultipleproject option and  select  AccountingVoucher.API and  AccountingJournal.API  toghther
+go to  solution and rigth click  at it   go to Multi StartUp  Project option and  select  AccountingVoucher.API and  AccountingJournal.API  toghther
 
 run doucker desktop 
 run  this command  for danlowad   docker image and run those image  in rabbitt countiner 
