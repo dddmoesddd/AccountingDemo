@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Beahaviores\**" />
+    <Compile Remove="Exceptions\**" />
+    <EmbeddedResource Remove="Beahaviores\**" />
+    <EmbeddedResource Remove="Exceptions\**" />
+    <None Remove="Beahaviores\**" />
+    <None Remove="Exceptions\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjectionFixed" Version="5.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AccountingVoucher.Domain\AccountingVoucher.Domain.csproj" />
+    <ProjectReference Include="..\FrameWork.Application\FrameWork.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Contracts\Infrustrucure\" />
+    <Folder Include="Contracts\Persistance\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="Features\Commands\VoucherItemCommands\AddVoucherItem\" />
+    <Folder Include="Features\Commands\VoucherItemCommands\DeleteVoucherItem\" />
+    <Folder Include="Features\Commands\VoucherItemCommands\UpdateVoucherItem\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+</Project>

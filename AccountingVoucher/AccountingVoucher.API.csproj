@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit" Version="8.0.9" />
+    <PackageReference Include="MassTransit.AspNetCore" Version="7.3.1" />
+    <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="7.3.1" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="8.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.11.1" />
+    <PackageReference Include="Moq" Version="4.18.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="xunit.assert" Version="2.4.2" />
+    <PackageReference Include="xunit.extensibility.core" Version="2.4.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AccountingVoucher.Application\AccountingVoucher.Application.csproj" />
+    <ProjectReference Include="..\AccountingVoucher.Infrastructure\AccountingVoucher.Infrastructure.csproj" />
+    <ProjectReference Include="..\FrameWork.Application\FrameWork.Application.csproj" />
+    <ProjectReference Include="..\FrameWork.Persistance.EFCore\FrameWork.Persistance.EFCore.csproj" />
+  </ItemGroup>
+
+</Project>

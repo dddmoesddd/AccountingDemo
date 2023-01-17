@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit.AspNetCore" Version="7.3.1" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="8.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.11.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AccountingJournal.Application\AccountingJournal.Application.csproj" />
+    <ProjectReference Include="..\AccountingJurnal.Infrastrcture\AccountingJournal.Infrastrcture.csproj" />
+    <ProjectReference Include="..\FrameWork.Infrastruture\FrameWork.Infrastruture.csproj" />
+  </ItemGroup>
+
+</Project>
