@@ -20,6 +20,7 @@ do this   work  for AccountingJournal Microservice for creating your database:
 
 go to  solution and rigth click  at it   go to maultipleproject option and  select  AccountingVoucher.API and  AccountingJournal.API  toghther
 
+run doucker desktop 
 run  this command  for danlowad   docker image and run those image  in rabbitt countiner 
 
 docker run --rm -it -p 15672:15672 -p 5672:5672 rabbitmq:3-management
@@ -31,4 +32,5 @@ now  run  the project  and you must  see swagger of those microservice
 
 ***every crud operation must be reflect  in journal database
 
-***i write few test fot  AccountingVoucher using Moq,AutoFixture and  ...
+***i write few test fot  AccountingVoucher using xunit,Moq,AutoFixture and  ...
+*** i use of vs 2022 
