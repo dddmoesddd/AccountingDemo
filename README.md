@@ -22,7 +22,7 @@ go to  solution and rigth click  at it   go to maultipleproject option and  sele
 
 run  this command  for danlowad   docker image and run those image  in rabbitt countiner 
 
-docker run --rm -it -p 15672:15672 - p 5672:5672 rabbitmq: 3 - management
+docker run --rm -it -p 15672:15672 -p 5672:5672 rabbitmq:3-management
 
 
 now  run  the project  and you must  see swagger of those microservice
