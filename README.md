@@ -26,7 +26,7 @@ run  this command  for danlowad   docker image and run those image  in rabbitt c
 docker run --rm -it -p 15672:15672 -p 5672:5672 rabbitmq:3-management
 
 
-now  run  the project  and you must  see swagger of those microservice
+now  run  the project  and you must  see swaggers of those microservices
 
 ***for update voucher give voucher number between ""
 
