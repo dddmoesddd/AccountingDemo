@@ -27,6 +27,8 @@ docker run --rm -it -p 15672:15672 - p 5672:5672 rabbitmq: 3 - management
 
 now  run  the project  and you must  see swagger of those microservice
 
-for update voucher give voucher number bettwen ""
+***for update voucher give voucher number bettwen ""
 
-every crud operation must be reflect  in journal database
+***every crud operation must be reflect  in journal database
+
+***i write few test fot  AccountingVoucher using Moq,AutoFixture and  ...
