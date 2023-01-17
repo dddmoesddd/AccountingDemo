@@ -32,6 +32,6 @@ now  run  the project  and you must  see swagger of those microservice
 
 ***every crud operation must be reflect  in journal database
 
-***i write few test fot  AccountingVoucher using xunit,Moq,AutoFixture and  ...
+***i write a few test fot  AccountingVoucher using xunit,Moq,AutoFixture and  ...
 *** i use of vs 2022 
 *** refresh browser to see swagger
