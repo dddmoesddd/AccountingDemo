@@ -3,6 +3,7 @@ using AccountingVoucher.Domain.Entities;
 using AccountingVoucher.Domain.ValueObjects;
 using FrameWork.Infrastruture.Persistance;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -29,6 +30,10 @@ namespace AccountingVoucher.Infrastructure.Repositories
 
 		public async Task<Voucher> GetVoucherByVoucherNumber(long voucherNumber)
 		{
+			if (voucherNumber == 0)
+			{
+				throw new ArgumentException(nameof(voucherNumber));
+			}
 			return await _context.Voucher.Where(t => t.VoucherNumber == voucherNumber).FirstOrDefaultAsync();
 		}
 
